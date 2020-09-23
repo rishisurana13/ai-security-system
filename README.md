@@ -9,6 +9,6 @@ That said, here is the first iteration of JARVIS. A modern day AI-based security
 1. In your terminal, navigate to the root of the project file. 
 2. Run ```source jarvis-ide/bin/activate``` followed by ```pip3 install -r requirements.txt```
 3. Open another tab of the same directory in the terminal.
-4. In one terminal run ```python3 detect.py``` and ```python3 stream.py```
+4. In one tab run ```python3 detect.py``` and ```python3 stream.py``` in the other.
 5. Open ``` http://0.0.0.0:5000/``` in your browser to watch the stream. 
 
