@@ -1,0 +1,10 @@
+{
+    "weekday-opening": "09:00",
+    "weekday-closing": "17:00",
+    "weekend-opening": "09:00",
+    "weekend-closing": "15:00",
+    "current_mode": "0",
+    "user_override": "False",
+    "mode_until_date": "0",
+    "mode_until_time": "0"
+}

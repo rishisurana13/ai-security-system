@@ -1,0 +1,4 @@
+bat
+handgun
+knife
+person
