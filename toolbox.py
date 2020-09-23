@@ -1,7 +1,6 @@
 import json
 import time
 import cv2
-import boto3
 import os
 
 def clear_dict(obj_dict):
@@ -141,18 +140,19 @@ def upload_to_s3_dir(vid_dir):
 			for vid in vidlist:
 				path = os.path.join(vid_dir,subdir,vid)
 				print(f'Uploading {path}')
-				client = boto3.client('s3')
-				client.put_object(Body=path, Bucket=bucket_name, Key=path)
+				# client = boto3.client('s3')
+				# client.put_object(Body=path, Bucket=bucket_name, Key=path)
 				print(f'Uploaded {path}')
 				del_file(path)
 		else:
 			print(f'{vid_dir} is empty')
 
 def upload_to_s3_file(file_path):
-	bucket_name = 'deeplens-objectdetection-output'
-	client = boto3.client('s3')
-	img = open(file_path, 'rb').read() 
-	client.put_object(Body=img, Bucket=bucket_name, Key=file_path)
+	# bucket_name = 'deeplens-objectdetection-output'
+	# client = boto3.client('s3')
+	# img = open(file_path, 'rb').read() 
+	# client.put_object(Body=img, Bucket=bucket_name, Key=file_path)
+	pass
 
 
 	

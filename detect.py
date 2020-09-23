@@ -1,7 +1,6 @@
 
 import os
 import argparse
-import cv
 import cv2
 import numpy as np
 import sys
@@ -11,7 +10,7 @@ import toolbox
 import time
 import threading
 from main import main
-import psutil
+
 t = time.time()
 MODEL_NAME = 'models/10oct'
 GRAPH_NAME = 'test.tflite'
